@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>
-        Food Tracker
-    </title>
     <head>
         <button id="search">
             press me!
         </button> <br><br>
         <button id = "backToHomePage" onclick="window.location.href = 'index.html';">Back to Stats</button>
     </head>
+    <body>
+        <div>
+            <form id="form" role="search">
+                <input type="search" id="query" name="q"
+                placeholder="Search..."
+                aria-label="Search through site content">
+                <button>Search</button>
+            </form>
+        </div>
+    </body>
 </html>

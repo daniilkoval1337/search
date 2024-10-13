@@ -1,13 +1,18 @@
 <!doctype html>
 <html lang="en">
+  <style>
+    #heading {text-align: center;}
+    #newMeal {padding: 40px 430px; margin-left: 270px; font-size: 24px; text-align: center;}
+  </style>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter Management</title>
     <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <title>Meal Tracker</title> <br><br>
-    <input type="button" id="newMeal" name="Log Meal">
+    <h1 id="heading">Meal Tracker</h1>
+    <button type="button" id="newMeal" onclick="window.location.href = 'foodTracker.html';">Log Meal</button>
   </body>
 </html>

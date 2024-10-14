@@ -8,7 +8,7 @@ window.onload = function() {
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(data, { type: 'array' });
-            const sheetName = 'Nutrients'; // Specify the sheet name
+            const sheetName = 'ModifiedMacros'; // Specify the sheet name
             const sheet = workbook.Sheets[sheetName];
 
             if (sheet) {
@@ -64,12 +64,11 @@ function displayFoodData(data) {
         // Add a click event listener to each row
         tr.addEventListener('click', function() {
             const servings = prompt(`How many servings of ${item.foodname} did you have?`); 
-            if(typeof(servings) !== "number"){
+            if(isNaN(servings) || servings.trim() === '' || Number(servings) <= 0){
                 alert("Please Enter a Number");
                 servings = 0;
             }
-
-            if(serving !== null){
+            else{
                 alert(`You have entered ${servings} servings of ${item.foodname}`);
             }
         });

@@ -6,12 +6,21 @@
     </head>
     <body>
         <div>
-            <form id="form" role="search">
-                <input type="search" id="query" name="q"
-                placeholder="Search..."
-                aria-label="Search through site content">
-                <button>Search</button>
-            </form>
+           
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+            <h1>Food Search</h1>
+                <input type="text" id="searchInput" placeholder="Search by food name" />
+                <button id="searchButton">Search</button>
+                <table id="foodTable" border="1" style="display: none;">
+                    <thead>
+                        <tr id="tableHeader"></tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+
+
+
+                <script src="search.js"></script>
         </div>
     </body>
 </html>

@@ -3,5 +3,7 @@ Takes a list of products from restaurant, provides key details about how much of
 
 Fitness Tracking app:
 - Use a relational database (as we are using tables to store information)
-- Have an overall table that has each user's id, and password
-- Link each row in the overall table to each user's specific table, detailing what food they ate, calories burnt, fitness goals, weight chart, etc.
+- Look through a file to find specific foods
+
+## Live Demo
+https://67ad5f756210ba0209654bac--beautiful-semolina-076ede.netlify.app/foodtracker
